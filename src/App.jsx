@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/projects";
 import About from './components/About/About'
 import SideRays from './components/SideRays/SideRays';
-import Landing from './components/Landing/landing';
+import Landing from './components/Landing/Landing';
 
 
 function App() {
