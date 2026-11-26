@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/projects";
+import Projects from "./components/Projects/Projects";
 import About from './components/About/About'
 import SideRays from './components/SideRays/SideRays';
 import Landing from './components/Landing/Landing';
