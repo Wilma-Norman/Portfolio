@@ -1,0 +1,144 @@
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 230px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: #1A1717;
+  border: 1px solid #292323;
+  border-radius: 16px;
+  z-index: 10;
+}
+
+.textHeader {
+  color: #F5F0E8;
+  font-size: 26px;
+  margin: 0;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.border {
+    border-bottom: 1px solid #F97316;
+}
+
+.navBar a {
+  color: #B8B0A8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navBar a:hover,
+.navBar a.active {
+  color: #F97316;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.contact span {
+  color: #B8B0A8;
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.contact a {
+  color: #F5F0E8;
+  font-size: 12px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact a:hover {
+  color: #F97316;
+}
+
+.textemail {
+    font-size: 14px;
+    color: #B8B0A8;
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: none;
+    width: calc(100% - 40px);
+    padding: 14px 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .navBar {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .contact {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .textemail {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+ .textemail {
+    display: none;
+  }
+
+  .contact a {
+    font-size: 11px;
+  }
+
+  .navBar {
+    gap: 12px;
+  }
+
+  .navBar a {
+    font-size: 14px;
+  }
+
+  .textHeader {
+    font-size: 22px;
+  }
+}

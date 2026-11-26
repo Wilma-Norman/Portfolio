@@ -1,0 +1,27 @@
+.wraper {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {  
+  color: #F5F0E8;
+  margin: 0;
+  font-size: 4rem;  
+}
+
+.title {  
+  color: #F97316;
+  font-size: 1.2rem;
+}
+
+.text { 
+  width: 700px;
+  color: #B8B0A8;
+  font-size: 1.2rem;
+}

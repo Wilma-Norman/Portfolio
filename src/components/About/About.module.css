@@ -1,0 +1,184 @@
+.wraper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.sectionOne {
+  border-radius: 10px; 
+  width: 50%;
+  height: auto;
+  margin: 30px;
+  color: #F5F0E8;
+}
+
+.picture {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.textPicture {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: 0 10px;
+}
+
+.mePicture {
+  border-radius: 100%;
+}
+
+.myText {    
+  font-size: large;
+  margin: 0 10px;
+}
+
+.aboutMeWraper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeHeader {
+  font-size: 20px;
+}
+
+.aboutMe {
+  background: #1A1717;
+  border: 1px solid #343434;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.contactGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.number,
+.email {
+  margin: 20px;
+}
+
+.emailicon,
+.telicon {
+  margin: 0 3px;
+}
+
+.linkedIn {
+  color: #fff;
+  margin: 10px;
+  background-color:#1a73e8da;
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.sectionTwo {
+  margin-top: 15%;
+}
+
+.orbit {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  perspective: 1000px;  
+  
+}
+
+.orbitItemOne,
+.orbitItemTwo {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform-style: preserve-3d;
+}
+
+/* First group orbits */
+.orbitItemOne {
+    transform:
+        translate(-50%, -50%)
+        rotateY(var(--spin))
+        translateZ(50px);
+}
+
+/* Second group orbits */
+.orbitItemTwo {
+    transform:
+        translate(-50%, -50%)
+        rotateY(calc(var(--spin) + 180deg))
+        translateZ(50px);
+}
+
+/* Arrange logos vertically */
+.logoColumnOne,
+.logoColumnTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transform-style: preserve-3d;
+}
+
+/* Keep logos facing forward */
+.logoColumnOne {
+    transform: rotateY(calc(-1 * var(--spin)));
+}
+
+.logoColumnTwo {
+    transform: rotateY(calc(-1 * var(--spin) - 180deg));
+}
+
+/* Logo size */
+.logoColumnOne img,
+.logoColumnTwo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.link {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px 0;
+  width: 120px;
+  color: #fff;
+  background-color: rgb(253, 75, 75);
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+ 
+.wraperCv,
+.wrapertel {
+  display: flex;
+  flex-direction: column;  
+}
+
+.wraperCv {
+  align-items: end;
+}
