@@ -2,7 +2,7 @@ import styles from "./Projects.module.css";
 import ProjectPopup from "../ProjectPopup/ProjectPopup";
 import DUIUContent from "../PopupContent/Duiu";
 import ZooContent from "../PopupContent/Zoo";
-import FoodContent from "../PopupContent/food";
+import FoodContent from "../PopupContent/Food";
 
 const Projects = () => {
 return(    
