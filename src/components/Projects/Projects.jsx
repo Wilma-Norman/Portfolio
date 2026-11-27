@@ -10,7 +10,7 @@ return(
     
 <wraper className={styles.wraper}>
     <div className={styles.intro}>
-    <h1>Selected Work.</h1>
+    <h1 className={styles.header}>Selected Work.</h1>
     <h2>A collection of my work</h2>
     <p className={styles.headerText}>
       Here you'll find a selection of projects I've worked on,

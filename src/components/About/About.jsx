@@ -25,16 +25,6 @@ const About = () => {
                         </div>
                     </div>
                     <div className={styles.contactGroup}>
-                        <div className={styles.wrapertel}>
-                    <p className={styles.email}>
-                        <FaEnvelope className={styles.emailicon}/>
-                        wilmanorman999@gmail.com
-                    </p>
-                    <p className={styles.number}>
-                        <FaPhone className={styles.telicon}/>
-                        076-080 54 48
-                    </p>
-                    </div>
                     <div className={styles.wraperCv}>
                         <a className={styles.linkedIn} 
                         href="https://www.linkedin.com/in/wilma-norman-06722225b/"

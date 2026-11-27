@@ -60,22 +60,12 @@
 .contactGroup {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-
-.number,
-.email {
-  margin: 20px;
-}
-
-.emailicon,
-.telicon {
-  margin: 0 3px;
+  justify-content: end;
 }
 
 .linkedIn {
   color: #fff;
-  margin: 10px;
+  margin: 10px 0 10px;
   background-color:#1a73e8da;
   padding: 10px;
   border-radius: 8px;
@@ -84,83 +74,13 @@
   transition: transform 0.25s ease;
 }
 
-.sectionTwo {
-  margin-top: 15%;
-}
-
-.orbit {
-  position: relative;
-  width: 280px;
-  height: 280px;
-  perspective: 1000px;  
-  
-}
-
-.orbitItemOne,
-.orbitItemTwo {
-  position: absolute;
-  top: 50%;
-  left: 90%;
-  transform-style: preserve-3d;
-}
-
-/* First group orbits */
-.orbitItemOne {
-    transform:
-        translate(-50%, -50%)
-        rotateY(var(--spin))
-        translateZ(50px);
-}
-
-/* Second group orbits */
-.orbitItemTwo {
-    transform:
-        translate(-50%, -50%)
-        rotateY(calc(var(--spin) + 180deg))
-        translateZ(50px);
-}
-
-/* Arrange logos vertically */
-.logoColumnOne,
-.logoColumnTwo {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    transform-style: preserve-3d;
-}
-
-/* Keep logos facing forward */
-.logoColumnOne {
-    transform: rotateY(calc(-1 * var(--spin)));
-}
-
-.logoColumnTwo {
-    transform: rotateY(calc(-1 * var(--spin) - 180deg));
-}
-
-/* Logo size */
-.logoColumnOne img,
-.logoColumnTwo img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  font-size: 2rem;
-}
-
 .link {
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  padding: 10px 0;
+  padding: 10px;
   width: 120px;
   color: #fff;
   background-color: rgb(253, 75, 75);
@@ -176,9 +96,37 @@
 .wraperCv,
 .wrapertel {
   display: flex;
-  flex-direction: column;  
+  flex-direction: row;  
 }
 
-.wraperCv {
-  align-items: end;
+
+@media (max-width: 1280px) {
+  .wraper {
+    margin-top: 20%;
+  }
+
+  .sectionOne {
+    width: 80%;
+  }
+}
+
+@media (max-width: 660px) {
+  .mePicture {
+    display: none;
+  }
+
+  .textPicture {
+    margin-bottom: 20%;
+    margin-top: 40%;
+  }
+
+  .myText {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    margin-top: 10%;
+  }
 }
